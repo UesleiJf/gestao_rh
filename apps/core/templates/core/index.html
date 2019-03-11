@@ -10,9 +10,9 @@
         </div>
         <div class="col-sm">
             {% if usuario.funcionario.empresa %}
-                <a href="">Editar Empresa</a>
+                <a href="{% url 'edit_empresa' usuario.funcionario.empresa.id %}">Editar Empresa</a>
             {% else %}
-                <a href="">Criar Empresa</a>
+                <a href="{% url 'create_empresa' %}">Criar Empresa</a>
             {% endif %}
         </div>
         <a href="{% url 'logout' %}">Logout</a>
