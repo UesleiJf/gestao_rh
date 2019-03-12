@@ -6,13 +6,12 @@
 
     {% for departamentos in object_list %}
         <br>
-        <a href="">
+        <a href="{% url 'update_departamento' departamentos.id %}">
             {{ departamentos }}
         </a>
-        <br>
-        <a href="">
+        <a href="{% url 'delete_departamento' departamentos.id %}">
             Deletar
         </a>
     {% endfor %}
-<a href="" class="btn btn-info"> Novo</a>
+<a href="{% url 'create_departamentos' %}" class="btn btn-info"> Novo</a>
 {% endblock %}
