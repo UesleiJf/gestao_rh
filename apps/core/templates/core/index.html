@@ -6,7 +6,8 @@
             Ola {{ usuario.funcionario.nome }}
         </div>
         <div class="col-sm">
-            <a href="{% url 'list_funcionarios' %}">Gerenciar Funcionarios</a>
+            <a href="{% url 'list_funcionarios' %}">Gerenciar Funcionarios</a><br>
+            <a href="{% url 'list_departamentos' %}">Gerenciar Departamentos</a>
         </div>
         <div class="col-sm">
             {% if usuario.funcionario.empresa %}
