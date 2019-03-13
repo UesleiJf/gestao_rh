@@ -18,4 +18,5 @@
     {% if not object_list %}
         <h3>Não existe registro de horas extras no banco de horas</h3>
     {% endif %}
+    <a href="{% url 'create_registro_hora_extra' %}" class="btn btn-info">Novo</a>
 {% endblock %}
