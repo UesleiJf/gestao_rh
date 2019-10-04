@@ -16,4 +16,14 @@
 
 <a href="{% url  'create_documento' %}" class="btn btn-success">Adicionar Documento</a>
 
+<br>
+
+<h4>Registro de Horas</h4>
+<ul>
+    {% for registro_hora in object.registrohoraextra_set.all %}
+        {{ registro_hora.motivo }} | {{ registro_hora.horas }} <br>
+    {% endfor %}
+</ul>
+
+
 {% endblock %}
